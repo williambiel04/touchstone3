@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Star Bakery - Contact</title>
+</head>
+<body>
+    <header>
+        <img src="bakery-logo.png" alt="North Star Bakery Logo with bread icon">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact & Pre-Orders</h1>
+        
+        <figure>
+            <img src="bakery-signature-loaf.png" alt="Baker holding a warm, fresh signature sourdough loaf wrapped in a cloth">
+            <figcaption>Our Signature Loaf - Order yours today!</figcaption>
+        </figure>
+
+        <section>
+            <h2>Location & Hours</h2>
+            <p>123 Main Street, Communityville</p>
+            <p>Open Tuesday - Sunday: 6:00 AM - 2:00 PM</p>
+        </section>
+
+        <section>
+            <h2>Get in Touch</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Order Details</legend>
+                    <label for="req-type">Request Type:</label>
+                    <select id="req-type" name="req-type">
+                        <option value="pre-order">Pre-order</option>
+                        <option value="general">General Question</option>
+                    </select>
+
+                    <label for="date">Pickup Date:</label>
+                    <input type="date" id="date" name="date">
+
+                    <label for="item-details">Item Details:</label>
+                    <textarea id="item-details" name="item-details" rows="4"></textarea>
+
+                    <label for="allergies">Allergy Notes:</label>
+                    <textarea id="allergies" name="allergies" rows="2"></textarea>
+                </fieldset>
+                
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 North Star Bakery</p>
+    </footer>
+</body>
+</html>
