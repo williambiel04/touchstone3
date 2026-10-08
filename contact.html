@@ -38,4 +38,55 @@
 
             <section class="full-width">
                 <h2>Get in Touch</h2>
-                <!-- Form ID added here so JavaScript can
+                <!-- Form ID added here so JavaScript can attach to it -->
+                <form id="preorder-form" action="#" method="post">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        
+                        <label for="name">Name:</label>
+                        <!-- HTML5 required attribute removed so custom JS validation runs -->
+                        <input type="text" id="name" name="name">
+                        <!-- Error message div -->
+                        <div id="name-error" class="error-text"></div>
+                        
+                        <label for="email">Email:</label>
+                        <!-- Type changed to text so JS regex validation runs instead of browser default -->
+                        <input type="text" id="email" name="email">
+                        <!-- Error message div -->
+                        <div id="email-error" class="error-text"></div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Order Details</legend>
+                        
+                        <label for="req-type">Request Type:</label>
+                        <select id="req-type" name="req-type">
+                            <option value="pre-order">Pre-order</option>
+                            <option value="general">General Question</option>
+                        </select>
+
+                        <label for="date">Pickup Date:</label>
+                        <input type="date" id="date" name="date">
+
+                        <label for="item-details">Item Details:</label>
+                        <!-- JavaScript will look for this ID to pre-fill the favorites -->
+                        <textarea id="item-details" name="item-details" rows="4"></textarea>
+
+                        <label for="allergies">Allergy Notes:</label>
+                        <textarea id="allergies" name="allergies" rows="2"></textarea>
+                    </fieldset>
+                    
+                    <button type="submit">Submit Request</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 North Star Bakery</p>
+        </footer>
+    </div>
+    
+    <!-- JavaScript linked at the bottom of the body -->
+    <script src="script.js"></script>
+</body>
+</html>
